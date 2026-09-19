@@ -1,0 +1,45 @@
+/* Fluid Mobile-Responsive Multi-Viewport Adaptation Stylesheet Grid Layout */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #212529;
+}
+.card {
+    border-radius: 12px;
+    border: none;
+}
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+.table th {
+    font-weight: 600;
+}
+/* Micro Breakpoint Layout Tweaks for Native Mobile Systems */
+@media (max-width: 576px) {
+    .container { padding-left: 12px; padding-right: 12px; }
+    h4 { font-size: 1.25rem; }
+    .btn { padding: 6px 10px; font-size: 0.9rem; }
+}
+/* Print Framework Directives Overrides */
+@media print {
+    .d-print-none, navbar, .navbar, .btn, .btn-group, .modal, .modal-backdrop, form {
+        display: none !important;
+    }
+    body {
+        background-color: #fff !important;
+        font-size: 12pt;
+    }
+    .card {
+        box-shadow: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .table {
+        width: 100% !important;
+        border-collapse: collapse !important;
+    }
+    .table th, .table td {
+        border: 1px solid #dee2e6 !important;
+        padding: 8px !important;
+    }
+}
